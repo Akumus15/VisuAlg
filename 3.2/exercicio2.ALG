@@ -1,24 +1,23 @@
 Algoritmo "semnome"
-// Elaborar um programa que pergunte quatro valores inteiros e apresente 2
-//resultados:
-//a) Resultado de suas adições
-//b) Resultado de suas multiplicações
+// Desenvolver um programa que faça duas perguntas: o valor referente às horas
+//atuais e o valor referente aos minutos atuais. Exemplo, se agora são 09:35h o
+//usuário deverá informar como resposta às horas atuais o valor 09 e como
+//resposta aos minutos atuais o valor 35. Em seguida o programa deverá apresentar
+//como resposta quantos minutos já se passaram desde às 00:00h deste dia.
 
 Var
 // Seção de Declarações das variáveis 
-n1, n2, n3, n4, adicao, subtracao: inteiro
+h, min, hpm ,result: inteiro
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-escreval("Me diga 4 números: ")
-leia(n1)
-leia(n2)
-leia(n3)
-leia(n4)
+escreval("Me diga as horas e os minutos: ")
+leia(h)
+leia(min)
 
-adicao <- n1 + n2 + n3 + n4
-subtracao <- n1 - n2 - n3 - n4
+hpm <- h * 60
+result <- min + hpm
 
-escreval("O resultado da soma dos seus números é", adicao, " e  o reslutado da subtração dos valores é ", subtracao)
+escreval("Já se passaram", result, "min, desda da 00:00h.")
 
 Fimalgoritmo
