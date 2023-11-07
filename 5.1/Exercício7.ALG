@@ -5,18 +5,22 @@ Algoritmo "semnome"
 //divisível, mostre-o; não sendo, passe para o próximo passo. A variável que
 // controla o contador deve ser iniciada com valor 1.
 Var
-// Seção de Declarações das variáveis 
-acumulador, contador, resto, n2: inteiro
+   // Seção de Declarações das variáveis
+   contador, resto: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-escreval(" Vou mostrar um programa que mostrá somente os números divisiveis por 4")
-acumulador <- 1
-contador <- 1
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval(" Vou mostrar um programa que mostrá somente os números divisiveis por 4")
+   contador <- 1
 
-resto <- contador % 4
+   enquanto ( contador < 200 ) faca
+      resto <- contador % 4
 
-se(
-
+      se( resto = 0 ) entao
+         escreval (" O número ", contador, " é divisivel por 4 ")
+      fimse
+      contador <- contador + 1
+   fimenquanto
 
 Fimalgoritmo
+fimse
