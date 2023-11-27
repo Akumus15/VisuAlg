@@ -11,7 +11,7 @@ leia(salmin)
 Escreval("Qual é o seu salário: ")
 leia(sal)
 
-resto <- sal % salmin
+resto <- sal / salmin
 escreval(" O seu salário equivale a ", resto,  " salários minímos")
 
 
