@@ -17,7 +17,7 @@ Inicio
    fimpara
 
    para cont de 1 ate 9 passo 1 faca
-      escreval(a[cont], " X 3 = ", b[cont]
+      escreval(a[cont], " X 3 = ", b[cont])
    fimpara
 
 
