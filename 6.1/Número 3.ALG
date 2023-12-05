@@ -1,23 +1,32 @@
 Algoritmo "semnome"
-//Desenvolver um programa que leia oito elementos em um vetor A, construa um
-//vetor B de mesma dimensão com os elementos do vetor A multiplicados por 3.
-//Apresente ao final o vetor B. Na exibição, o elemento B[1] deve ser implicado
-//pelo elemento A[1] * 3, o elemento B[2] implicado pelo A[2] * 3, e assim por
-//diante, até 8.
+//Desenvolver um programa que leia um vetor A com 15 elementos, construa um
+//vetor B de mesmo tipo, sendo que cada elemento do vetor B deve ser o fatorial
+//do elemento correspondente do vetor A. Apresentar o vetor B.
 Var
-   a: vetor[1..9] de inteiro
-   b: vetor[1..9] de inteiro
-   cont: inteiro
+   a: vetor [1..15] de inteiro
+   b: vetor [1..15] de inteiro
+   num, fat, contFat, cont: inteiro
+
 
 Inicio
-   para cont de 1 ate 9 passo 1 faca
-      escreval("Informe um número: ")
+
+   para cont de 1 ate 15 passo 1 faca
+      escreval("Digite um número para a[",cont,"]:")
       leia(a[cont])
-      b[cont] <- a[cont] * 3
+
+      contFat <- 1
+      fat <- 1
+
+      enquanto ( contFat <= a[cont] ) faca
+         fat <- fat * contFat
+         contFat <- contFat + 1
+      fimenquanto
+      b[cont] <- fat
    fimpara
 
-   para cont de 1 ate 9 passo 1 faca
-      escreval(a[cont], " X 3 = ", b[cont])
+   escreval("Exibindo os fatoriais dos valores inseridos:")
+   para cont de 1 ate 15 passo 1 faca
+      escreval(a[cont]," fatorial = ", b[cont])
    fimpara
 
 

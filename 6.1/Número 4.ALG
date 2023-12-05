@@ -1,33 +1,29 @@
 Algoritmo "semnome"
-//Desenvolver um programa que leia um vetor A com 15 elementos, construa um
-//vetor B de mesmo tipo, sendo que cada elemento do vetor B deve ser o fatorial
-//do elemento correspondente do vetor A. Apresentar o vetor B.
+//Desenvolver um programa que leia 20 elementos de um vetor A e construa um
+//vetor B de mesma dimensão com os mesmos elementos de A, os quais devem estar
+//invertidos, ou seja, o primeiro elemento de A passa a ser o último elemento
+//de B, e assim por diante. Apresentar os vetores A e B.
 Var
-   a: vetor [1..15] de inteiro
-   b: vetor [1..15] de inteiro
-   num, fat, contFat, cont: inteiro
-
+a: vetor [1..20] de inteiro
+b: vetor [1..20] de inteiro
+cont: inteiro
 
 Inicio
 
-   para cont de 1 ate 15 passo 1 faca
-      escreval("Digite um número para a[",cont,"]:")
-      leia(a[cont])
+para cont de 1 ate 20 passo 1 faca
+ escreval("Digite 20 números: ", cont)
+ leia(a[cont])
+fimpara
 
-      contFat <- 1
-      fat <- 1
+para cont de 1 ate 20 passo 1 faca
+b[cont] <- a[ 21 - cont]
+escreval(b[cont])
 
-      enquanto ( contFat <= a[cont] ) faca
-         fat <- fat * contFat
-         contFat <- contFat + 1
-      fimenquanto
-      b[cont] <- fat
-   fimpara
+escreval("Vetor a:", a[cont], ". Vetor b:", b[cont])
 
-   escreval("Exibindo os fatoriais dos valores inseridos:")
-   para cont de 1 ate 15 passo 1 faca
-      escreval(a[cont]," fatorial = ", b[cont])
-   fimpara
+fimpara
+
+
 
 
 Fimalgoritmo

@@ -7,6 +7,7 @@ Algoritmo "semnome"
 Var
    a: vetor[1..9] de inteiro
    b: vetor[1..9] de inteiro
+   cont: inteiro
 
 Inicio
    para cont de 1 ate 9 passo 1 faca
@@ -16,7 +17,7 @@ Inicio
    fimpara
 
    para cont de 1 ate 9 passo 1 faca
-      escreval(a[cont], " X 3 = ", b[cont]
+      escreval(a[cont], " X 3 = ", b[cont])
    fimpara
 
 
